@@ -1,0 +1,67 @@
+body{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.age-div{
+    text-align: center;
+}
+.text{
+    font-family: 'sans-serif';
+    font-size: 10vw;
+    transform: translateY(10px);
+    display: inline-block;
+    animation: fadeIn 4s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(20px)
+    }
+}
+
+label{
+    font-family: 'sans-serif';
+    font-size: 5vw;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ageInput{
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 3vw;
+}
+
+button{
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    font-size: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-top: 2vh;
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;    
+}
